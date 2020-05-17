@@ -1,0 +1,18 @@
+import time
+
+print("start time")
+start_time = time.time()
+print(start_time)
+
+stopper = input("Press enter to stop")
+end_time = time.time()
+print ("Consultation ended")
+print(end_time)
+print ("------------")
+duration = int(end_time - start_time)
+print(duration)    
+amount = float(duration * .0138889)
+print(amount)
+
+import pandas as pd
+pd.to_csv("kobb.csv")
